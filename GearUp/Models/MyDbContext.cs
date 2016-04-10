@@ -13,11 +13,7 @@ namespace GearUp.Models
         {
 
         }
-        protected void OnMondelCreating(DbModelBuilder modelBuilder)
-        {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MyDbContext, Configuration>());
-            base.OnModelCreating(modelBuilder);
-        }
+
 
         public virtual DbSet<Make> make { get; set; }
         public virtual DbSet<Vehicle> vehicle { get; set; }
