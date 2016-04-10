@@ -7,6 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using GearUp.Models;
+using System.Net.Http;
+using System.Net.Http.Headers;
+
 
 namespace GearUp.Controllers
 {
@@ -17,6 +20,19 @@ namespace GearUp.Controllers
         // GET: Makes
         public ActionResult Index()
         {
+            //request
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("https://api.edmunds.com/api/vehicle/v2/makes?state=used&year=2014&view=basic&fmt=json&api_key=p9yfdzh9purq2wg3f4j4jsgs");
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("X-Originating-Ip:50.17.211.206"));
+            //response
+            HttpResponseMessage response = client.GetAsync("application/json").Result;
+            if (response.IsSuccessStatusCode)
+            {
+
+            }
+            
+            
+
             return View(db.make.ToList());
         }
 
