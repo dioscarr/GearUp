@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using GearUp.Migrations;
 
 namespace GearUp.Models
 {
@@ -21,7 +22,7 @@ namespace GearUp.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("GearupCon", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +30,6 @@ namespace GearUp.Models
         {
             return new ApplicationDbContext();
         }
+      
     }
 }
