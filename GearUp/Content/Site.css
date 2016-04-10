@@ -1,0 +1,70 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+      background: url('../Image/02-PD-Transmission-Basics.jpg') no-repeat center center fixed; 
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.Gearseach {
+   
+    margin-top:200px;
+}
+.Gearseach-button {
+    min-height:45px;
+    position:relative;
+    left:453px;
+    top:-48px;
+    background-color:#E5E4E2;
+    border: none;
+    width:100px;    
+    border:1px solid #e1e1e1;
+-webkit-box-shadow: -12px -1px 45px -5px rgba(0,0,0,0.34);
+-moz-box-shadow: -12px -1px 45px -5px rgba(0,0,0,0.34);
+box-shadow: -12px -1px 45px -5px rgba(0,0,0,0.34); 
+}
+
+.Gearseach-button:hover {
+   color:#870000;
+    background-color:#E5E4E2;
+    border: none;
+}
+
+.searxh-box {
+min-width:100%;
+min-height:50px;
+color:#e80b0b;
+font-weight:bolder;
+font-size:25px;
+}
+.fa-cogs {
+    font-size: 31px!important;
+}
+
+.footer {
+    border:1px solid #000000;
+background-color:#222222;
+}
