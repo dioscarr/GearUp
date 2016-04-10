@@ -2,12 +2,15 @@
     padding-top: 50px;
     padding-bottom: 20px;
 
-      background: url('../Image/02-PD-Transmission-Basics.jpg') no-repeat center center fixed; 
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
+    
+ 
+}
+
+.Home-Body {
+  background: url('../Image/02-PD-Transmission-Basics.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
